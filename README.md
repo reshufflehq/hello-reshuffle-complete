@@ -1,8 +1,22 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Reshuffle template representing the "Hello Reshuffle" app built in the [tutorial available here](https://dev.reshuffle.app/hello-reshuffle).
+
+![](./assets/screenshot.png)
+
+Reshuffle provides a progressive way to build fullstack applications, without needing to understand the cloud.
+
+> Note: Reshuffle is built on top of Create React App
+
+## Getting Started
+
+1. `npm start` to run a local version of your app.
+2. Make changes, and see them reflected locally.
+  > Note: Your frontend code resides in the standard `src` directory.
+          Backend code needs to reside in the `backend` directory. [Read more here](dev.reshuffle.com)
+3. `npx reshuffle deploy` to deploy your app to the cloud.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the directory of your Reshuffle project, you can run:
 
 ### `npm start`
 
@@ -11,6 +25,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
+You will see any backend errors on the command line
 
 ### `npm test`
 
@@ -25,7 +40,13 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Read more about deploying with Reshuffle [here](https://dev.reshuffle.com/deploying-to-reshuffle)
+
+### `npx reshuffle deploy`
+
+Deploys your Reshuffle app to the cloud, thereby making it available on your apps URL.
+
+> Note: `reshuffle deploy` implicitly runs `npm run build`
 
 ### `npm run eject`
 
@@ -39,7 +60,14 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can learn more about Reshuffle by reading the [dev docs](https://dev.reshuffle.com).
+
+* [API Reference](dev-docs.reshuffle.com)
+* [Main Concepts](dev.reshuffle.com/hello-reshuffle)
+* [Getting Started](dev.reshuffle.com/getting-started)
+* [Running Locally](dev.reshuffle.com/running-locally)
+
+You can learn more about [Create React App by reading the docs.](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
