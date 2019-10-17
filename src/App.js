@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import '@reshuffle/code-transform/macro'
+import React, { useState, useEffect } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// import backend logic like any js function
+import { addAndGet } from '../backend/helloServer.js';
+
+export default () => {
+ const [num, setNum] = useState(undefined);
+ useEffect(() => {
+   addAndGet(0).then(setNum)
+ }, []);
+ return (
+   <div>
+     <h1> Hello World from Reshuffle! </h1>
+     <span> Number is: {num} </span>
+     <button onClick={() => addAndGet(1).then(setNum)} >
+       Increment me
+     </button>
+   </div>
+ );
 }
-
-export default App;
