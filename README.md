@@ -1,3 +1,5 @@
+# We have terminated the backend for this project.  Old Reshuffle projects can no longer be deployed.
+
 This is a Reshuffle template representing the "Hello Reshuffle" app built in the [tutorial available here](https://dev.reshuffle.app/hello-reshuffle).
 
 ![](./assets/screenshot.png)
